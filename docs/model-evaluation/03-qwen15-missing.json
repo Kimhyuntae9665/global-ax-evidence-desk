@@ -1,0 +1,34 @@
+{
+  "mode": "qwen-grounded-draft",
+  "abstained": false,
+  "answer": "Handle missing energy readings as an unknown value and check the source document for corrections.",
+  "citations": [
+    {
+      "doc_id": "SOP-EN-01",
+      "title": "Synthetic energy submission and review SOP",
+      "revision": "2.0",
+      "language": "en",
+      "quote": "A missing value is unknown, never zero. Negative values and stale reporting periods require source-document checking and correction.",
+      "source_digest": "590ca945a8d6f340cd991081f5bf7c6c7321b72ab8640e2e426ae31c265f7a1a"
+    }
+  ],
+  "retrieval": {
+    "terms": [
+      "energy",
+      "handle",
+      "missing",
+      "readings",
+      "should"
+    ],
+    "method": "lexical-overlap",
+    "candidate_count": 2
+  },
+  "notice": "AI 초안입니다. 원문 인용 일치만 검사했으며 의미·업무 적합성은 담당자가 확인해야 합니다.",
+  "generated": true,
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "generation_ms": 37165,
+  "quote_verified": true,
+  "semantic_verified": false,
+  "raw_generation": "{\"doc_id\":\"SOP-EN-01\",\"quote\":\"A missing value is unknown, never zero. Negative values and stale reporting periods require source-document checking and correction.\",\"answer\":\"Handle missing energy readings as an unknown value and check the source document for corrections.\"}"
+}

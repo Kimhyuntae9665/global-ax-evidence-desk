@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+work/
+model-cache/
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+.venv/
+.env
+.env.*
+models/
+

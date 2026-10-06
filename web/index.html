@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AX Evidence Desk · 글로벌 데이터 검수</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <aside class="rail">
+      <div class="brand">AX<span>DESK</span></div>
+      <div class="rail-line"></div>
+      <button class="nav active" data-view="data"><b>▤</b>데이터 검수</button
+      ><button class="nav" data-view="guide"><b>⌕</b>근거 안내</button
+      ><button class="nav" data-view="review"><b>✓</b>확인·인계</button>
+      <div class="rail-foot">LOCAL<br />WORKSPACE</div>
+    </aside>
+    <div class="workspace">
+      <header>
+        <div>
+          <p class="eyebrow">GLOBAL OPERATIONS / ENERGY SUBMISSIONS</p>
+          <h1>보고 전에, 근거부터 확인합니다.</h1>
+          <p class="subtitle">
+            사업장 제출값 → 규칙 검수 → 문서 안내 → 담당자 확인
+          </p>
+        </div>
+        <div class="header-right">
+          <span class="synthetic">합성 데이터 PoC</span
+          ><span class="period">2026.09</span
+          ><button class="quiet" id="reset">시연 초기화</button>
+        </div>
+      </header>
+      <div class="statusbar">
+        <span id="step1" class="step"><em>1</em>제출값 검수</span><i>→</i
+        ><span class="step"><em>2</em>원문 대조</span><i>→</i
+        ><span id="step3" class="step"><em>3</em>담당자 확인</span><i>→</i
+        ><span id="step4" class="step"><em>4</em>CSV 인계</span>
+        <div id="gate" class="gate"></div>
+      </div>
+      <main id="main"></main>
+      <div id="toast" role="status"></div>
+      <footer>
+        <span>AX Evidence Desk · 공개 포트폴리오 프로젝트</span
+        ><span
+          >회사 내부 데이터·실제 ERP 연동 없음 · AI 초안은 원문과 대조</span
+        >
+      </footer>
+    </div>
+    <dialog id="edit-dialog">
+      <form id="edit-form">
+        <div class="dialog-head">
+          <div>
+            <p class="eyebrow">SUBMISSION CORRECTION</p>
+            <h2 id="edit-title">제출값 수정</h2>
+          </div>
+          <button type="button" id="cancel-edit" class="quiet">닫기</button>
+        </div>
+        <div id="source-confirmation" class="notice"></div>
+        <input id="edit-id" type="hidden" /><label
+          >에너지 사용량<input
+            id="edit-value"
+            name="value"
+            placeholder="누락된 값은 원자료 확인 후 입력"
+        /></label>
+        <div class="form-row">
+          <label
+            >단위<select id="edit-unit">
+              <option>kWh</option>
+              <option>MWh</option>
+              <option>Wh</option>
+              <option>kW</option>
+            </select></label
+          ><label>보고 기간<input id="edit-period" value="2026-09" /></label>
+        </div>
+        <label class="check"
+          ><input id="edit-excluded" type="checkbox" /> 중복 제출 등 집계
+          제외</label
+        ><label
+          >수정·제외 사유<input
+            id="edit-reason"
+            placeholder="원자료 대조 또는 중복 확인 사유"
+        /></label>
+        <p class="hint">
+          수정하면 기존 담당자 확인은 만료됩니다. 값은 자동 추정하지 않습니다.
+        </p>
+        <button class="primary" type="submit">수정 기록 저장</button>
+      </form>
+    </dialog>
+    <script src="/app.js"></script>
+  </body>
+</html>

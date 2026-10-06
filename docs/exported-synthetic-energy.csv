@@ -1,0 +1,6 @@
+id,site,country,period,energy,value,unit,normalized_kwh,source_doc
+S001,Seoul Demo Plant,KR,2026-09,electricity,12000,kWh,12000,SYN-KR-001
+S002,Hanoi Demo Plant,VN,2026-09,electricity,14,MWh,14000,SYN-VN-001
+S003,Monterrey Demo Plant,MX,2026-09,electricity,9500,kWh,9500,SYN-MX-001
+S005,Da Nang Demo Plant,VN,2026-09,electricity,0.7,MWh,700.0,SYN-VN-002
+S006,Queretaro Demo Plant,MX,2026-09,electricity,10,MWh,10000,SYN-MX-002

@@ -1,0 +1,5 @@
+# Optional model service only. Core application/tests use Python standard library.
+torch==2.6.0
+transformers==4.49.0
+huggingface-hub>=0.28,<1
+safetensors>=0.4,<1

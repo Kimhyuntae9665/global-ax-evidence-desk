@@ -1,0 +1,8 @@
+[
+  {"id":"S001","site":"Seoul Demo Plant","country":"KR","lang":"ko","period":"2026-09","energy":"electricity","value":"12000","unit":"kWh","source_doc":"SYN-KR-001"},
+  {"id":"S002","site":"Hanoi Demo Plant","country":"VN","lang":"vi","period":"2026-09","energy":"electricity","value":"14","unit":"MWh","source_doc":"SYN-VN-001"},
+  {"id":"S003","site":"Monterrey Demo Plant","country":"MX","lang":"en","period":"2026-09","energy":"electricity","value":null,"unit":"kWh","source_doc":"SYN-MX-001"},
+  {"id":"S004","site":"Seoul Demo Plant","country":"KR","lang":"ko","period":"2026-09","energy":"electricity","value":"12200","unit":"kWh","source_doc":"SYN-KR-002"},
+  {"id":"S005","site":"Da Nang Demo Plant","country":"VN","lang":"vi","period":"2026-09","energy":"electricity","value":"700","unit":"Wh","source_doc":"SYN-VN-002"},
+  {"id":"S006","site":"Queretaro Demo Plant","country":"MX","lang":"en","period":"2026-08","energy":"electricity","value":"-10","unit":"MWh","source_doc":"SYN-MX-002"}
+]

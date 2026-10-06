@@ -1,0 +1,51 @@
+test_changed_sop_snapshot_cannot_be_approved (test_core.DeskTests.test_changed_sop_snapshot_cannot_be_approved) ... ok
+test_current_corpus_revision_invalidates_review (test_core.DeskTests.test_current_corpus_revision_invalidates_review) ... ok
+test_decimal_conversion_avoids_binary_float_error (test_core.DeskTests.test_decimal_conversion_avoids_binary_float_error) ... ok
+test_edit_invalidates_review_even_if_new_value_valid (test_core.DeskTests.test_edit_invalidates_review_even_if_new_value_valid) ... ok
+test_exclusion_requires_reason_and_retains_history (test_core.DeskTests.test_exclusion_requires_reason_and_retains_history) ... ok
+test_finite_zero_with_extreme_exponent_is_normalized_safely (test_core.DeskTests.test_finite_zero_with_extreme_exponent_is_normalized_safely) ... ok
+test_initial_issues_exclude_unknown_and_duplicates_from_totals (test_core.DeskTests.test_initial_issues_exclude_unknown_and_duplicates_from_totals) ... ok
+test_invalid_numeric_forms_never_sum_or_allocate_huge_output (test_core.DeskTests.test_invalid_numeric_forms_never_sum_or_allocate_huge_output) ... ok
+test_multilingual_citations (test_core.DeskTests.test_multilingual_citations) ... ok
+test_reset_preserves_audit_and_clears_review (test_core.DeskTests.test_reset_preserves_audit_and_clears_review) ... ok
+test_retrieval_abstains_on_unsupported_questions (test_core.DeskTests.test_retrieval_abstains_on_unsupported_questions) ... ok
+test_retrieval_only_current_docs_and_exact_citations (test_core.DeskTests.test_retrieval_only_current_docs_and_exact_citations) ... ok
+test_review_and_export_block_until_repaired_and_reviewed (test_core.DeskTests.test_review_and_export_block_until_repaired_and_reviewed) ... ok
+test_review_requires_exact_snapshot_shape (test_core.DeskTests.test_review_requires_exact_snapshot_shape) ... ok
+test_sqlite_persists_repairs_on_reopen (test_core.DeskTests.test_sqlite_persists_repairs_on_reopen) ... ok
+test_stale_other_tab_snapshot_cannot_approve_latest_data (test_core.DeskTests.test_stale_other_tab_snapshot_cannot_approve_latest_data) ... ok
+test_superseded_document_change_does_not_invalidate_current_corpus (test_core.DeskTests.test_superseded_document_change_does_not_invalidate_current_corpus) ... ok
+test_unexpected_repair_fields_rejected (test_core.DeskTests.test_unexpected_repair_fields_rejected) ... ok
+test_exact_quote_passes (test_generation.QuoteValidation.test_exact_quote_passes) ... ok
+test_hallucinated_quote_rejected (test_generation.QuoteValidation.test_hallucinated_quote_rejected) ... ok
+test_second_paragraph_same_document_is_valid (test_generation.QuoteValidation.test_second_paragraph_same_document_is_valid) ... ok
+test_type_confusion_rejected (test_generation.QuoteValidation.test_type_confusion_rejected) ... ok
+test_unknown_document_rejected (test_generation.QuoteValidation.test_unknown_document_rejected) ... ok
+test_encoded_traversal_is_denied (test_http.HttpTests.test_encoded_traversal_is_denied) ... 127.0.0.1 - - [06/Oct/2026 12:13:18] "GET /../secret.txt HTTP/1.1" 403 -
+127.0.0.1 - - [06/Oct/2026 12:13:18] "GET /%2e%2e/secret.txt HTTP/1.1" 403 -
+127.0.0.1 - - [06/Oct/2026 12:13:18] "GET /%2e%2e%5csecret.txt HTTP/1.1" 403 -
+127.0.0.1 - - [06/Oct/2026 12:13:18] "GET /.hidden HTTP/1.1" 403 -
+ok
+test_export_returns_conflict_before_review (test_http.HttpTests.test_export_returns_conflict_before_review) ... 127.0.0.1 - - [06/Oct/2026 12:13:19] "GET /api/export HTTP/1.1" 409 -
+ok
+test_external_host_and_origin_cannot_mutate (test_http.HttpTests.test_external_host_and_origin_cannot_mutate) ... 127.0.0.1 - - [06/Oct/2026 12:13:19] "POST /api/repair HTTP/1.1" 403 -
+127.0.0.1 - - [06/Oct/2026 12:13:19] "POST /api/repair HTTP/1.1" 403 -
+127.0.0.1 - - [06/Oct/2026 12:13:19] "POST /api/repair HTTP/1.1" 403 -
+127.0.0.1 - - [06/Oct/2026 12:13:19] "GET /api/state HTTP/1.1" 200 -
+ok
+test_same_origin_write_and_request_bounds (test_http.HttpTests.test_same_origin_write_and_request_bounds) ... 127.0.0.1 - - [06/Oct/2026 12:13:20] "POST /api/repair HTTP/1.1" 200 -
+127.0.0.1 - - [06/Oct/2026 12:13:20] "POST /api/reset HTTP/1.1" 413 -
+127.0.0.1 - - [06/Oct/2026 12:13:20] "POST /api/reset HTTP/1.1" 200 -
+127.0.0.1 - - [06/Oct/2026 12:13:20] "POST /api/reset HTTP/1.1" 400 -
+127.0.0.1 - - [06/Oct/2026 12:13:20] "POST /api/reset HTTP/1.1" 415 -
+127.0.0.1 - - [06/Oct/2026 12:13:20] "POST /api/repair HTTP/1.1" 400 -
+ok
+test_state_health_and_static_file (test_http.HttpTests.test_state_health_and_static_file) ... 127.0.0.1 - - [06/Oct/2026 12:13:20] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [06/Oct/2026 12:13:20] "GET /api/state HTTP/1.1" 200 -
+127.0.0.1 - - [06/Oct/2026 12:13:21] "GET / HTTP/1.1" 200 -
+ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 4.054s
+
+OK

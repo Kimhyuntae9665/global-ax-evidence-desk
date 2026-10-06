@@ -1,0 +1,41 @@
+{
+  "scope": "development check; no held-out accuracy estimate",
+  "question": {
+    "question": "누락 값은 0으로 처리하나요?",
+    "language": "ko"
+  },
+  "model_server_sha256": "2db775be1c3a58380a5a16d1d32330d315c364f4732542d64f29a9942f6de27d",
+  "result": {
+    "mode": "qwen-grounded-draft",
+    "abstained": false,
+    "answer": "누락 값은 미확인이며, 0으로 처리하지 않습니다. 음수 값과 이전 보고 기간은 원본 자료를 확인하여 수정합니다.",
+    "citations": [
+      {
+        "doc_id": "SOP-KO-01",
+        "title": "가상 에너지 제출 및 검토 절차",
+        "revision": "2.0",
+        "language": "ko",
+        "quote": "누락 값은 미확인이며 0으로 처리하지 않습니다. 음수 값과 이전 보고 기간은 원본 자료를 확인하여 수정합니다.",
+        "source_digest": "803c391a4755f2784bc06ec591512831235e91d4d625d73fc1715ad9e5967753"
+      }
+    ],
+    "retrieval": {
+      "terms": [
+        "0으로",
+        "값은",
+        "누락",
+        "처리하나요"
+      ],
+      "method": "lexical-overlap",
+      "candidate_count": 1
+    },
+    "notice": "AI 초안입니다. 원문 인용 일치만 검사했으며 의미·업무 적합성은 담당자가 확인해야 합니다.",
+    "generated": true,
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "generation_ms": 45812,
+    "quote_verified": true,
+    "semantic_verified": false,
+    "raw_generation": "{\"doc_id\":\"SOP-KO-01\",\"quote\":\"누락 값은 미확인이며 0으로 처리하지 않습니다. 음수 값과 이전 보고 기간은 원본 자료를 확인하여 수정합니다.\",\"answer\":\"누락 값은 미확인이며, 0으로 처리하지 않습니다. 음수 값과 이전 보고 기간은 원본 자료를 확인하여 수정합니다.\"}"
+  }
+}

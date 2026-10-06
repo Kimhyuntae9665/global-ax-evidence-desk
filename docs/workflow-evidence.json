@@ -1,0 +1,40 @@
+{
+  "scope": "synthetic deterministic workflow; not business improvement metrics",
+  "initial": {
+    "valid_count": 1,
+    "invalid_count": 5,
+    "excluded_count": 0,
+    "unresolved_count": 6,
+    "normalized_kwh": "14000"
+  },
+  "corrected": {
+    "valid_count": 5,
+    "invalid_count": 0,
+    "excluded_count": 1,
+    "unresolved_count": 0,
+    "normalized_kwh": "46200.0"
+  },
+  "stages": [
+    {
+      "stage": "unresolved",
+      "export_status": 409,
+      "code": "validation_blocked"
+    },
+    {
+      "stage": "corrected-unreviewed",
+      "export_status": 409,
+      "code": "review_required"
+    },
+    {
+      "stage": "reviewed",
+      "export_status": 200,
+      "rows": 5,
+      "normalized_kwh": "46200.0"
+    },
+    {
+      "stage": "edited-after-review",
+      "export_status": 409,
+      "code": "review_required"
+    }
+  ]
+}

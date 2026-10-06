@@ -1,0 +1,49 @@
+{
+  "synthetic": true,
+  "notice": "시연용 원자료입니다. 실제 사업장·협력사 청구서가 아닙니다.",
+  "records": [
+    {
+      "source_doc": "SYN-KR-001",
+      "period": "2026-09",
+      "value": "12000",
+      "unit": "kWh",
+      "note": "시연용 전력 원장 원본"
+    },
+    {
+      "source_doc": "SYN-VN-001",
+      "period": "2026-09",
+      "value": "14",
+      "unit": "MWh",
+      "note": "시연용 전력 원장 원본"
+    },
+    {
+      "source_doc": "SYN-MX-001",
+      "period": "2026-09",
+      "value": "9500",
+      "unit": "kWh",
+      "note": "수집 단계에서 값이 누락된 합성 사례"
+    },
+    {
+      "source_doc": "SYN-KR-002",
+      "period": "2026-09",
+      "value": "12000",
+      "unit": "kWh",
+      "duplicate_of": "SYN-KR-001",
+      "note": "같은 원장이 중복 업로드된 합성 사례"
+    },
+    {
+      "source_doc": "SYN-VN-002",
+      "period": "2026-09",
+      "value": "0.7",
+      "unit": "MWh",
+      "note": "수집 단계에서 값·단위가 잘못 옮겨진 합성 사례"
+    },
+    {
+      "source_doc": "SYN-MX-002",
+      "period": "2026-09",
+      "value": "10",
+      "unit": "MWh",
+      "note": "부호와 기간이 잘못 옮겨진 합성 사례"
+    }
+  ]
+}

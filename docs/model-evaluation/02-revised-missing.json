@@ -1,0 +1,38 @@
+{
+  "mode": "generation-rejected",
+  "abstained": true,
+  "answer": "AI 초안을 보류했습니다. 인용 원문을 직접 확인해 주세요.",
+  "citations": [
+    {
+      "doc_id": "SOP-EN-01",
+      "title": "Synthetic energy submission and review SOP",
+      "revision": "2.0",
+      "language": "en",
+      "quote": "A missing value is unknown, never zero. Negative values and stale reporting periods require source-document checking and correction.",
+      "source_digest": "590ca945a8d6f340cd991081f5bf7c6c7321b72ab8640e2e426ae31c265f7a1a"
+    },
+    {
+      "doc_id": "SOP-EN-01",
+      "title": "Synthetic energy submission and review SOP",
+      "revision": "2.0",
+      "language": "en",
+      "quote": "Duplicate site, period and energy submissions must be reconciled. Exclude the redundant record with a reason; retain the original record and the audit history.",
+      "source_digest": "590ca945a8d6f340cd991081f5bf7c6c7321b72ab8640e2e426ae31c265f7a1a"
+    }
+  ],
+  "retrieval": {
+    "terms": [
+      "energy",
+      "handle",
+      "missing",
+      "readings",
+      "should"
+    ],
+    "method": "lexical-overlap",
+    "candidate_count": 2
+  },
+  "notice": "실제 모델 출력을 형식·인용 검사에서 보류했습니다. 원문을 직접 확인해 주세요.",
+  "generated": false,
+  "generation_error": "AI 출력 형식이 맞지 않아 초안을 보류했습니다.",
+  "raw_generation": "{\"doc_id\":\"SOP-EN-01\",\"quote\":\"A missing value is unknown, never zero. Negative values and stale reporting periods require source-document checking and correction.\"}"
+}
